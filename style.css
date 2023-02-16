@@ -91,11 +91,12 @@ h2{
     border-radius: 20px;
 }
 .fokep{
-    width: 350px;
+    width: 500px;
 }
 .iz{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 a:hover{
     transition: 1s;
@@ -230,7 +231,7 @@ h3{
         padding-left: 80px;
         padding-right: 80px;
     }
-    .fokep{
+    .img{
         width: 300;
     }
 }
@@ -242,7 +243,7 @@ h3{
         padding-left: 60px;
         padding-right: 60px;
     }
-    .fokep{
+    .img{
         width: 250;
     }
 }
@@ -254,7 +255,7 @@ h3{
         padding-left: 40px;
         padding-right: 40px;
     }
-    .fokep{
+    .img{
         width: 250;
     }
 }
@@ -266,7 +267,7 @@ h3{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .fokep{
+    .img{
         width: 200;
     }
 }
@@ -278,7 +279,7 @@ h3{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .fokep{
+    .img{
         width: 150;
     }
 }
@@ -290,7 +291,7 @@ h3{
         padding-left: 20px;
         padding-right: 20px;
     }
-    .fokep{
+    .img{
         width: 100;
     }
 }
