@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="style.css">
+    <title>Vegi_Daniel_Mark</title>
+</head>
+<body>
+        <header class="cim">    
+            <h1>Smurfs</h1>
+        </header>
+    <main>
+        <nav class="nav1">
+            <ul>
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="kepregeny1.html" class="p">The purple Smurf</a></li>
+                <li><a href="kepregeny2.html" class="n">The smurf and his neighbours</a></li>
+                <li><a href="kepregeny3.html" class="m">The murf and the magic flute</a></li>
+                <li><a href="kerdoiv.html">Quiz</a></li>
+            </ul>
+        </nav>
+        <article class="art">
+            <p>Dear readers, if youre here then you probablky want to play a game. Well i welcome you to the Smurfic quiz.</p>
+            <div class="quiz">
+                <img id="img1" class="qkep" src="Question_mark.png">
+                <p>
+                    <p>Here's my first question for you all: <br> Did the smurfs found a cure for the purple illnes in the 1st comic?</p>
+                    <button class="button" type="button" onclick="quiz1(1)">Yes</button>
+                    <button class="button" type="button" onclick="quiz1(0)">No</button>
+                </p>
+            </div>
+            <br>
+            <div class="quiz">
+                <img id="img2" class="qkep"  src="Question_mark.png">
+                <p>
+                    <p>Second question coming up: <br> Who was infected first with the purple illnes in the 1st comic?</p>
+                    <button class="button" type="button" onclick="quiz2(0)">Papa smurf</button>
+                    <button class="button" type="button" onclick="quiz2(1)">A random smurf</button>
+                    <button class="button" type="button" onclick="quiz2(0)">Tricky smurf</button>
+                </p>
+            </div>
+            <br>
+            <div class="quiz">
+                <img id="img3" class="qkep"  src="Question_mark.png">
+                <p>
+                    <p>Now we're at the 3rd one: <br> Why did the smurf move out of the village in the 2nd comic?</p>
+                    <button class="button" type="button" onclick="quiz3(1)">Loud neighbours</button>
+                    <button class="button" type="button" onclick="quiz3(0)">Too many smurfs around</button>
+                    <button class="button" type="button" onclick="quiz3(0)">Animal attack</button>
+                </p>
+            </div>
+            <div class="quiz">
+                <img id="img4" class="qkep"  src="Question_mark.png">
+                <p>
+                    <p>Last question here we come: <br> Did the 3rd comic end?</p>
+                    <button class="button" type="button" onclick="quiz4(0)">Yes</button>
+                    <button class="button" type="button" onclick="quiz4(1)">No</button>
+                </p>
+            </div>
+            <p class="vege">If you arrived at the bottom then you have finished the quiz.</p>
+        </article>
+        <nav class="nav1">
+            <ul>
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="kepregeny1.html" class="p">The purple Smurf</a></li>
+                <li><a href="kepregeny2.html" class="n">The smurf and his neighbours</a></li>
+                <li><a href="kepregeny3.html" class="m">The murf and the magic flute</a></li>
+                <li><a href="kerdoiv.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </main>
+        <footer class="fo">
+            <h2>Végi Dániel Márk</h2>
+        </footer>
+        <script>
+            function quiz1(sw) {
+              if (sw == 1) {
+                pic = "thumbs-up-200-200.gif"
+              } else {
+                pic = "better-luck-next-time-200-200.gif"
+              }
+              document.getElementById("img1").src = pic;
+            }
+        </script>
+        <script>
+            function quiz2(sw) {
+              if (sw == 1) {
+                pic = "thumbs-up-200-200.gif"
+              } else {
+                pic = "better-luck-next-time-200-200.gif"
+              }
+              document.getElementById("img2").src = pic;
+            }
+        </script>
+        <script>
+            function quiz3(sw) {
+              if (sw == 1) {
+                pic = "thumbs-up-200-200.gif"
+              } else {
+                pic = "better-luck-next-time-200-200.gif"
+              }
+              document.getElementById("img3").src = pic;
+            }
+        </script>
+        <script>
+            function quiz4(sw) {
+              if (sw == 1) {
+                pic = "thumbs-up-200-200.gif"
+              } else {
+                pic = "better-luck-next-time-200-200.gif"
+              }
+              document.getElementById("img4").src = pic;
+            }
+        </script>
+</body>
+</html>
