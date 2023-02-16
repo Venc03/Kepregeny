@@ -1,0 +1,53 @@
+*{
+    color: azure;
+    font-family: Comic Sans MS;
+    font-size: 15px;
+    text-align: center;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cim{
+    width: 80%;
+    margin: auto;
+    background-color: transparent;
+}
+h1{
+    font-size: 40px;
+}
+.nav1{
+    border: 3px solid rgb(12, 71, 199);
+    border-radius: 10px;
+    background-color: rgb(29, 148, 216);
+    flex-direction: row;
+    width: 20%;
+}
+.nav2{
+    border: 3px solid rgb(12, 71, 199);
+    border-radius: 10px;
+    background-color: rgb(29, 148, 216);
+    flex-direction: row;
+    width: 20%;
+}
+.art{
+    border: 3px solid rgb(12, 71, 199);
+    border-radius: 10px;
+    background-color: rgb(29, 148, 216);
+    width: 40%;
+}
+.fo{
+    width: 80%;
+    margin: auto;
+    background-color: transparent;
+}
+h2{
+    font-size: 30px;
+}
