@@ -10,43 +10,71 @@
     <title>Vegi_Daniel_Mark</title>
 </head>
 <body>
-        <header class="cim">    
-            <h1>Hupikék Törpikék</h1>
-        </header>
-    <main>
-        <nav class="nav1">
+    <header class="cim">    
+        <h1>Smurfs</h1>
+    </header>
+    <main class="kpr">
+        <nav class="nav2">
             <ul>
+                <li><a href="index.html">Main page</a></li>
                 <li><a href="kepregeny1.html" class="p">The purple Smurf</a></li>
                 <li><a href="kepregeny2.html" class="n">The smurf and his neighbours</a></li>
                 <li><a href="kepregeny3.html" class="m">The murf and the magic flute</a></li>
                 <li><a href="kerdoiv.html">Játszma</a></li>
             </ul>
         </nav>
-        <article class="art">
-            <p>Dear readers, i welcome you to the smurfic page where you can chose to read 3 types of smurf comic. These are listed on the side of the page but heres some of the comic pages if you want to get a small idea of what these are:</p>
-            <div class="iz">
-                <div class="fokep">
-                    <img src="kepr1/f1.png">
+        <div class="arrows">
+          <div class="prevd">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          </div>
+          <div class="nextd">
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div> 
+        </div>
+        <article class="kep1">
+            <div class="slideshowcucc">
+
+                <div class="ss fade">
+                  <img src="kepr3/p1.png" class="sskep">
                 </div>
-                <div class="fokep">
-                    <img src="kepr2/f1.png">
-                </div>
-                <div class="fokep">
-                    <img src="kepr3/f1.png">
+            
+                <div class="ss fade">
+                  <h3>We're sorry</h3>
+                  <p>This comic is a still in progress, please do not rage or rampage. We will be releasing the next page soon. Untill then, you can support us here: <a href="">Donate</a></p>
                 </div>
             </div>
         </article>
-        <nav class="nav1">
-            <ul>
-                <li><a href="kepregeny1.html" class="p">The purple Smurf</a></li>
-                <li><a href="kepregeny2.html" class="n">The smurf and his neighbours</a></li>
-                <li><a href="kepregeny3.html" class="m">The murf and the magic flute</a></li>
-                <li><a href="kerdoiv.html">Játszma</a></li>
-            </ul>
-        </nav>
     </main>
-        <footer class="fo">
-            <h2>Végi Dániel Márk</h2>
-        </footer>
+    <footer class="fo">
+        <h2>Végi Dániel Márk</h2>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("ss");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
