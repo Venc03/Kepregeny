@@ -230,7 +230,7 @@ h3{
         padding-left: 80px;
         padding-right: 80px;
     }
-    img{
+    .fokep{
         width: 300;
     }
 }
@@ -242,7 +242,7 @@ h3{
         padding-left: 60px;
         padding-right: 60px;
     }
-    img{
+    .fokep{
         width: 250;
     }
 }
@@ -254,7 +254,7 @@ h3{
         padding-left: 40px;
         padding-right: 40px;
     }
-    img{
+    .fokep{
         width: 250;
     }
 }
@@ -266,7 +266,7 @@ h3{
         padding-left: 20px;
         padding-right: 20px;
     }
-    img{
+    .fokep{
         width: 200;
     }
 }
@@ -278,7 +278,7 @@ h3{
         padding-left: 20px;
         padding-right: 20px;
     }
-    img{
+    .fokep{
         width: 150;
     }
 }
@@ -290,7 +290,7 @@ h3{
         padding-left: 20px;
         padding-right: 20px;
     }
-    img{
+    .fokep{
         width: 100;
     }
 }
