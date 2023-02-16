@@ -29,8 +29,10 @@
                 <img id="img1" class="qkep" src="Question_mark.png">
                 <p>
                     <p>Here's my first question for you all: <br> Did the smurfs found a cure for the purple illnes in the 1st comic?</p>
-                    <button class="button" type="button" onclick="quiz1(1)">Yes</button>
-                    <button class="button" type="button" onclick="quiz1(0)">No</button>
+                    <div class="buttons">
+                        <button class="button" type="button" onclick="quiz1(1)">Yes</button>
+                        <button class="button" type="button" onclick="quiz1(0)">No</button>
+                    </div>
                 </p>
             </div>
             <br>
@@ -38,9 +40,11 @@
                 <img id="img2" class="qkep"  src="Question_mark.png">
                 <p>
                     <p>Second question coming up: <br> Who was infected first with the purple illnes in the 1st comic?</p>
-                    <button class="button" type="button" onclick="quiz2(0)">Papa smurf</button>
-                    <button class="button" type="button" onclick="quiz2(1)">A random smurf</button>
-                    <button class="button" type="button" onclick="quiz2(0)">Tricky smurf</button>
+                    <div class="buttons">
+                        <button class="button" type="button" onclick="quiz2(0)">Papa smurf</button>
+                        <button class="button" type="button" onclick="quiz2(1)">A random smurf</button>
+                        <button class="button" type="button" onclick="quiz2(0)">Tricky smurf</button>
+                    </div>
                 </p>
             </div>
             <br>
@@ -48,17 +52,21 @@
                 <img id="img3" class="qkep"  src="Question_mark.png">
                 <p>
                     <p>Now we're at the 3rd one: <br> Why did the smurf move out of the village in the 2nd comic?</p>
-                    <button class="button" type="button" onclick="quiz3(1)">Loud neighbours</button>
-                    <button class="button" type="button" onclick="quiz3(0)">Too many smurfs around</button>
-                    <button class="button" type="button" onclick="quiz3(0)">Animal attack</button>
+                    <div class="buttons">
+                        <button class="button" type="button" onclick="quiz3(1)">Loud neighbours</button>
+                        <button class="button" type="button" onclick="quiz3(0)">Too many smurfs around</button>
+                        <button class="button" type="button" onclick="quiz3(0)">Animal attack</button>
+                    </div>
                 </p>
             </div>
             <div class="quiz">
                 <img id="img4" class="qkep"  src="Question_mark.png">
                 <p>
                     <p>Last question here we come: <br> Did the 3rd comic end?</p>
-                    <button class="button" type="button" onclick="quiz4(0)">Yes</button>
-                    <button class="button" type="button" onclick="quiz4(1)">No</button>
+                    <div class="buttons">
+                        <button class="button" type="button" onclick="quiz4(0)">Yes</button>
+                        <button class="button" type="button" onclick="quiz4(1)">No</button>
+                    </div>
                 </p>
             </div>
             <p class="vege">If you arrived at the bottom then you have finished the quiz.</p>
@@ -76,6 +84,7 @@
         <footer class="fo">
             <h2>Végi Dániel Márk</h2>
         </footer>
+    <div class="scripts">
         <script>
             function quiz1(sw) {
               if (sw == 1) {
@@ -116,5 +125,6 @@
               document.getElementById("img4").src = pic;
             }
         </script>
+    </div>
 </body>
 </html>
