@@ -255,7 +255,7 @@ h3{
         padding-right: 40px;
     }
     img{
-        width: 200;
+        width: 250;
     }
 }
 @media only screen and (max-width: 650px){
@@ -267,6 +267,30 @@ h3{
         padding-right: 20px;
     }
     img{
+        width: 200;
+    }
+}
+@media only screen and (max-width: 450px){
+    .sskep {
+        width: 200px;
+    }
+    .art{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    img{
         width: 150;
+    }
+}
+@media only screen and (max-width: 250px){
+    .sskep {
+        width: 400px;
+    }
+    .art{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    img{
+        width: 100;
     }
 }
