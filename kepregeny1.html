@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <link rel="stylesheet" href="style.css">
+    <title>Vegi_Daniel_Mark</title>
+</head>
+<body>
+    <header class="cim">    
+        <h1>Smurfs</h1>
+    </header>
+    <main class="kpr">
+        <nav class="nav2">
+            <ul>
+                <li><a href="index.html">Main page</a></li>
+                <li><a href="kepregeny1.html" class="p">The purple Smurf</a></li>
+                <li><a href="kepregeny2.html" class="n">The smurf and his neighbours</a></li>
+                <li><a href="kepregeny3.html" class="m">The murf and the magic flute</a></li>
+                <li><a href="kerdoiv.html">Játszma</a></li>
+            </ul>
+        </nav>
+        <article class="kep1">
+            <div class="slideshowcucc">
+
+                <div class="ss fade">
+                  <img src="kepr1/p1.png" class="sskep">
+                </div>
+            
+                <div class="ss fade">
+                  <img src="kepr1/p2.png" class="sskep">
+                </div>
+            
+                <div class="ss fade">
+                  <img src="kepr1/p3.png" class="sskep">
+                </div>
+
+                <div class="ss fade">
+                    <img src="kepr1/p4.png" class="sskep">
+                  </div>
+
+                  <div class="ss fade">
+                    <img src="kepr1/p5.png" class="sskep">
+                  </div>
+
+                  <div class="ss fade">
+                    <img src="kepr1/p6.png" class="sskep">
+                  </div>
+
+                  <div class="ss fade">
+                    <img src="kepr1/p7.png" class="sskep">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </article>
+    </main>
+    <footer class="fo">
+        <h2>Végi Dániel Márk</h2>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("ss");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>

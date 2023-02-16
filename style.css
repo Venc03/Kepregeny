@@ -16,6 +16,13 @@ main{
     justify-content: center;
     justify-content: space-between;
 }
+.kpr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
 .cim{
     width: 80%;
     margin: auto;
@@ -26,30 +33,24 @@ h1{
     color: deepskyblue;
 }
 .nav1{
-    display: flex;
-    border: 0px;
-    border-radius: 40px;
     background-color: transparent;
-    flex-direction: row;
-    width: 10%;
-    justify-content: center;
+    width: 20%;
     align-items: center;
-}
-.nav2{
-    display: flex;
-    border: 0px;
-    border-radius: 40px;
-    background-color: transparent;
-    flex-direction: row;
-    width: 10%;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 .art{
     border: 3px solid rgb(12, 71, 199);
     border-radius: 20px;
     background-color: rgb(29, 148, 216);
     width: 60%;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.kep1{
+    border: 3px solid rgb(12, 71, 199);
+    border-radius: 20px;
+    background-color: rgb(29, 148, 216);
+    width: 100%;
 }
 .fo{
     width: 80%;
@@ -60,6 +61,23 @@ h2{
     font-size: 30px;
     color: deepskyblue;
 }
+.nav2{
+    background-color: transparent;
+    width: 50%;
+}
+.nav2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav2 a{
+    text-decoration: none;
+}
+.nav2 ul li{
+    border: 8px solid black;
+    border-radius: 20px;
+}
 .nav1 ul{
     list-style-type: none;
     padding: 0;
@@ -68,21 +86,9 @@ h2{
 .nav1 a{
     text-decoration: none;
 }
-.nav2 ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 10;
-}
-.nav2 a{
-    text-decoration: none;
-}
-a:hover{
-    transition: 1s;
-    font-size: 20px;
-    color: blue;
-}
-a:link{
-    color: blue;
+.nav1 ul li{
+    border: 8px solid black;
+    border-radius: 20px;
 }
 img{
     width: 350px;
@@ -90,4 +96,70 @@ img{
 .iz{
     display: flex;
     flex-direction: column;
+}
+a:hover{
+    transition: 1s;
+    font-size: 20px;
+    color: blue;
+}
+.p:hover{
+    transition: 1s;
+    font-size: 20px;
+    color: purple;
+}
+.n:hover{
+    transition: 1s;
+    font-size: 20px;
+    color: dimgray;
+}
+.m:hover{
+    transition: 1s;
+    font-size: 20px;
+    color: gold;
+}
+.ss {
+    display: none
+}
+.sskep {
+    vertical-align: middle;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 1800px;
+}
+.slideshowcucc{
+  position: relative;
+  margin: 0;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
